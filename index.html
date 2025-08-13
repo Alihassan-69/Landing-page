@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaStack — Supercharge your workflow</title>
+  <meta name="description" content="A modern SaaS landing page with responsive layout, dark mode, pricing, testimonials, and clean UX." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Remix Icon CDN for lightweight icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <div class="container nav-row">
+      <a class="brand" href="#top" aria-label="NovaStack Home">
+        <span class="brand-mark">⚡</span>
+        <span class="brand-text">NovaStack</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta" class="btn btn--small btn--primary">Get Started</a>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+          <i class="ri-moon-line" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge"><i class="ri-flashlight-line"></i> New: Automations v2</p>
+          <h1>Supercharge your product launches with <span class="highlight">NovaStack</span>.</h1>
+          <p class="sub">All-in-one toolkit for shipping faster: tasks, automations, real-time insights, and AI-powered help—beautifully simple.</p>
+          <div class="actions">
+            <a href="#cta" class="btn btn--primary btn--lg">Start free</a>
+            <a href="#features" class="btn btn--ghost btn--lg">See features</a>
+          </div>
+          <ul class="hero-points">
+            <li><i class="ri-check-line"></i>No credit card needed</li>
+            <li><i class="ri-check-line"></i>Cancel anytime</li>
+            <li><i class="ri-check-line"></i>Dark mode ready</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="stat-card">
+            <div class="stat-number">↑ 214%</div>
+            <div class="stat-label">Feature adoption</div>
+          </div>
+          <div class="mockup">
+            <div class="mockup-header">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-chart"></div>
+              <div class="mockup-list">
+                <div class="list-item"><i class="ri-rocket-line"></i> Launch checklist</div>
+                <div class="list-item"><i class="ri-cpu-line"></i> AI suggestions</div>
+                <div class="list-item"><i class="ri-bar-chart-2-line"></i> KPIs dashboard</div>
+                <div class="list-item"><i class="ri-shield-check-line"></i> SSO & Roles</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="features-title">Powerful features to get you shipping.</h2>
+          <p class="sub">Purpose-built tools that remove friction from kickoff to post-launch.</p>
+        </div>
+
+        <div class="grid features-grid">
+          <article class="card feature">
+            <i class="ri-command-line feature-icon"></i>
+            <h3>Workflow Automations</h3>
+            <p>Trigger tasks, assign owners, and post updates automatically with visual rules.</p>
+            <ul class="tick-list">
+              <li><i class="ri-check-line"></i>Drag & drop builder</li>
+              <li><i class="ri-check-line"></i>100+ integrations</li>
+              <li><i class="ri-check-line"></i>Error handling</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <i class="ri-bar-chart-grouped-line feature-icon"></i>
+            <h3>Live Analytics</h3>
+            <p>See adoption, retention, and release impact in real time without SQL.</p>
+            <ul class="tick-list">
+              <li><i class="ri-check-line"></i>Metrics & cohorts</li>
+              <li><i class="ri-check-line"></i>Custom dashboards</li>
+              <li><i class="ri-check-line"></i>Export & webhooks</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <i class="ri-shield-keyhole-line feature-icon"></i>
+            <h3>Enterprise-grade Security</h3>
+            <p>Encryption at rest, SSO/SAML, RBAC, and rigorous audit logs by default.</p>
+            <ul class="tick-list">
+              <li><i class="ri-check-line"></i>SSO/SAML, SCIM</li>
+              <li><i class="ri-check-line"></i>Granular roles</li>
+              <li><i class="ri-check-line"></i>Compliance ready</li>
+            </ul>
+          </article>
+
+          <article class="card feature">
+            <i class="ri-robot-2-line feature-icon"></i>
+            <h3>Built-in AI Help</h3>
+            <p>Auto-draft specs, summarize feedback, and turn ideas into tasks in seconds.</p>
+            <ul class="tick-list">
+              <li><i class="ri-check-line"></i>Spec assistant</li>
+              <li><i class="ri-check-line"></i>Smart summaries</li>
+              <li><i class="ri-check-line"></i>Context aware</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof / Logos -->
+    <section class="section logos" aria-label="Trusted by customers">
+      <div class="container logos-row">
+        <span class="logo-chip">Acme</span>
+        <span class="logo-chip">Globex</span>
+        <span class="logo-chip">Umbrella</span>
+        <span class="logo-chip">Initech</span>
+        <span class="logo-chip">Stark</span>
+        <span class="logo-chip">Wayne</span>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="testimonials-title">Teams ❤️ NovaStack</h2>
+          <p class="sub">Here’s what customers say after 30 days.</p>
+        </div>
+
+        <div class="testimonials">
+          <button class="carousel-btn prev" id="prevTestimonial" aria-label="Previous testimonial"><i class="ri-arrow-left-s-line"></i></button>
+          <div class="carousel-viewport" id="testimonialTrack" aria-live="polite">
+            <figure class="t-card">
+              <blockquote>“We shipped two quarters of work in six weeks. The automations are unreal.”</blockquote>
+              <figcaption>
+                <img alt="" src="https://i.pravatar.cc/64?img=12" width="48" height="48" loading="lazy">
+                <div><strong>Amna Q.</strong><span>Head of Product, Globex</span></div>
+              </figcaption>
+            </figure>
+
+            <figure class="t-card">
+              <blockquote>“Finally, analytics my execs actually read. Setup took minutes.”</blockquote>
+              <figcaption>
+                <img alt="" src="https://i.pravatar.cc/64?img=32" width="48" height="48" loading="lazy">
+                <div><strong>Hassan R.</strong><span>PM, Initech</span></div>
+              </figcaption>
+            </figure>
+
+            <figure class="t-card">
+              <blockquote>“Security reviews used to block us. Now we ship with confidence.”</blockquote>
+              <figcaption>
+                <img alt="" src="https://i.pravatar.cc/64?img=5" width="48" height="48" loading="lazy">
+                <div><strong>Sarah L.</strong><span>Eng Manager, Stark</span></div>
+              </figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn next" id="nextTestimonial" aria-label="Next testimonial"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="pricing-title">Simple, transparent pricing</h2>
+          <p class="sub">Start free. Upgrade when you’re ready.</p>
+        </div>
+
+        <div class="grid pricing-grid">
+          <article class="card price">
+            <div class="price-header">
+              <h3>Free</h3>
+              <p>For hobby projects & trials</p>
+            </div>
+            <div class="price-tag"><span>$0</span>/mo</div>
+            <ul class="tick-list">
+              <li><i class="ri-check-line"></i>Up to 3 projects</li>
+              <li><i class="ri-check-line"></i>Basic automations</li>
+              <li><i class="ri-check-line"></i>Community support</li>
+            </ul>
+            <a href="#cta" class="btn btn--outline w-100">Get started</a>
+          </article>
+
+          <article class="card price price--highlight" aria-label="Recommended plan">
+            <div class="price-badge"><i class="ri-star-smile-line"></i> Most Popular</div>
+            <div class="price-header">
+              <h3>Pro</h3>
+              <p>For growing product teams</p>
+            </div>
+            <div class="price-tag"><span>$24</span>/mo</div>
+            <ul class="tick-list">
+              <li><i class="ri-check-line"></i>Unlimited projects</li>
+              <li><i class="ri-check-line"></i>Advanced analytics</li>
+              <li><i class="ri-check-line"></i>Priority support</li>
+            </ul>
+            <a href="#cta" class="btn btn--primary w-100">Start Pro</a>
+          </article>
+
+          <article class="card price">
+            <div class="price-header">
+              <h3>Enterprise</h3>
+              <p>For large orgs with compliance needs</p>
+            </div>
+            <div class="price-tag"><span>Custom</span></div>
+            <ul class="tick-list">
+              <li><i class="ri-check-line"></i>SSO/SAML, SCIM</li>
+              <li><i class="ri-check-line"></i>Dedicated CSM</li>
+              <li><i class="ri-check-line"></i>Security reviews</li>
+            </ul>
+            <a href="#cta" class="btn btn--outline w-100">Talk to sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section cta" id="cta" aria-labelledby="cta-title">
+      <div class="container cta-card">
+        <div class="cta-copy">
+          <h2 id="cta-title">Ready to move faster?</h2>
+          <p class="sub">Join thousands of teams who build and launch with NovaStack.</p>
+        </div>
+        <form class="cta-form" action="#" method="post" onsubmit="return false" aria-label="Join waitlist">
+          <label class="sr-only" for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required>
+          <button class="btn btn--primary" id="joinBtn" type="submit">
+            <i class="ri-send-plane-2-line"></i> Join free
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <span class="brand-mark">⚡</span>
+        <span class="brand-text">NovaStack</span>
+        <p>Build more. Ship faster.</p>
+      </div>
+      <nav class="f-nav" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#cta">Get Started</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> NovaStack Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
